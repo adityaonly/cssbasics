@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            border: 2px solid red;
+            display: flex;
+            height: 650px;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(245, 245, 174);
+            border-radius: 9px;
+        }
+        .child{
+            border: 2px solid rgb(0, 0, 0);
+            height: 330px;
+            width: 330px;
+            margin: 5px;
+            padding: 5px;  
+            background-color: aquamarine;
+            border-radius: 8px;
+            /* box-shadow: 12px 5px brown; pehle wala x offset ka dusre wala y offset ka tesra colour */
+            /* box-shadow: 12px 12px 7px green; yejo 7 px wala h ye h brur radius  */
+            /* box-shadow: 12px 13px 5px 20px  blue; 20px jo h spread radius h jiska matlab kitni dur tak shadow faile gi  */
+            /* box-shadow: inset 12px 3px green;  inset lagane ke bad shadow andar ki taraf aa jaiyegi */
+            /* box-shadow: 12px 3px green,3px 12px grey,-12px -5px blue,-15px 20px brown;comma lagake ham bohut sari radius add kar sakte h  */
+        }
+        .head2{
+            /* text-shadow: 12px 5px 4px red;  same h box shadow ki tarah lekin isme m hum colur size units se pehle likh sakte h  */
+            /* text-shadow: 12px 3px red,3px 12px green,-12px 3px brown,3px -12px blue; is tarah se hum multiple shadows use kar sakte h  */
+            
+        }
+        h1{
+            /* text-shadow: 5px 10px ; default colur black h agar colour nhi lagaya koi to default colour black ki shadow aa jayegi  */
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">
+            <img src="pex.jpg.jpg" height="80px" width="280px" alt="">
+            <h1 class="head2"  >welcome to codehelp</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur quis inventore ipsum sed distinctio quo voluptatem nisi libero dolores perspiciatis quae sapiente, quaerat repellat corrupti?
+            </p>
+        </div>
+    </div>
+    
+</body>
+</html>

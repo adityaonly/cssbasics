@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css basics</title>
+    <style>
+        h1,footer {
+            background-color: brown;
+        }
+        p{
+            color: aqua;
+        }
+        .tpara{
+            background-color: blue;
+        }
+        .dpara{
+            background-color: red;
+        }
+        #first{
+            background-color: yellow;
+        }
+        
+        p,h1,footer {
+            background-color: rgb(11, 5, 4);
+        }
+    </style>
+<!-- hamare pass css add karne ke 3 methods hote h 
+1. inline css = isme hum style tag add karke usmne properties de te h 
+2.internal css= isme hum head tag ke andar style tag use kartre hai aur uske andar sari css properties aply karte h 
+3. external css= isme hum ek alag file banat e h aur usme sari styling karte hai aur use phir html mai head tag mai link tag se add karte h -->
+ <!-- hamare pass 4 selectors hote 
+ 1. element selector= isme elemnt select karte h bas jaise 11 line mai 
+ 2.id selector= id selector use karte wakt hamay id ke name ke pehle # use karna padta h jaise 20 line mai 
+ 3. class selector= mai . use karte hai jaise 14 aur 17 line mai 
+ 4. group selector =hum bohut sare elements ko comma se seperate karke unhe properties de sakte h jaise 8 aur 24 line mai 
+       NOTE 
+agar ek cheez ke upar 2 ya us se zyada properties lagi h to order of appearance ke anasur unpart properties apply hogi jaise hamne upar pehle paragraphs ko aqua ,blue ,red colour diya aur uske bad last mai humne group[ selector se sabka background black kar diya to sab overwrite ho gya black se lekin  3 par5a isiliye nhi hu a kyunki uski class humne inline di h group selector ke bad isiliye uski property bad mai apply hogi aur isiliye uska background cvolour black nahi hua -->
+    
+</head>
+<body>
+    <h1 >welcome to the aditya</h1>
+    <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nam, unde ipsam numquam neque tenetur cupiditate! Similique doloribus dolorem aut.</p>
+    <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque impedit fuga hic corrupti fugit totam soluta quidem officiis ut rerum. Eos temporibus magni suscipit et minus eveniet, sit numquam doloribus.</p>
+    <p class="tpara dpara">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci alias nemo assumenda quasi enim accusantium blanditiis soluta voluptatum velit, voluptates, laborum voluptate dolorem excepturi asperiores rerum nesciunt eos reiciendis corporis similique. Culpa corrupti laboriosam, natus molestias consequuntur, recusandae necessitatibus nulla nisi veniam voluptate vero placeat dolorem dolore esse eaque! Soluta?</p>
+    <footer>end is here</footer>
+</body>
+</html>

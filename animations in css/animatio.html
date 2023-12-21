@@ -1,0 +1,114 @@
+<!-- animation is the set of transition and it contains multiple steps  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    .container{
+        height: 100vh;
+        width: 100vw;
+        border: 4px solid ;
+        border-radius: 8px;
+        background-color: aquamarine;
+    }
+    .box1{
+        height: 80px;
+        width: 200px;
+        background-color: blue;
+        border: 4px solid grey;
+        border-radius: 8px;
+        position: relative;
+        animation-name: rightmove;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-delay: 1s;
+        animation-direction: alternate; 
+        animation-timing-function: linear;
+        animation-fill-mode: backwards;
+        }
+    @keyframes rightmove{
+        from{
+            top: 0;
+            left: 0;
+        }
+        to{
+            top: 0px;
+            left:1450px;
+        }
+    }
+    .box2{
+        height: 80px;
+        width: 200px;
+        background-color: blue;
+        border: 4px solid grey;
+        border-radius: 8px;
+        position: relative;
+        animation-name:leftmove;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-delay: 1s;
+        animation-direction: alternate; 
+        animation-timing-function: linear;
+    
+    }
+    @keyframes leftmove{
+        from{
+            top: 800px;
+            left: 1450px;
+        }
+        to{
+            top: 800px;
+            left:0;
+        }
+    }
+    .circle{
+        background-color: blue;
+        height: 80px;
+        width: 80px;
+        border: 4px solid grey;
+        border-radius: 40px;
+        position: relative;
+        animation: 4s linear 1s infinite alternate  circle;
+        /*duration ,easing function,delay,iteration count,direction,fill mode,play state,name  --- ye h animation lagan ke lioye shiorthand */
+    }
+    @keyframes circle{
+        0%{
+                top:0;
+                left:5px;
+        }
+        30%{
+                top:0;
+                left:1550px;
+        }
+        60%{
+                top:200px;
+                left:455px;
+        }
+        90%{
+                top:700px;
+                left:5px;
+        }
+        100%{
+                top:700px;
+                left:1450px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="circle"></div>
+    </div>
+
+    
+</body>
+</html>

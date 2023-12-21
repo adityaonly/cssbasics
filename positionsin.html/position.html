@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positions</title>
+    <style>
+        .container{
+            background-color: aquamarine;
+            border: 2px solid red;
+            height: 2000px;
+            /* position: relative; */
+        }
+        .box{
+            background-color: green;
+            border: 2px solid red;
+            height: 4000px;
+        }
+        ul li{
+            display: inline-flex;
+            background-color: pink;
+            color: darkblue;
+            border: 1px solid black;
+            border-radius: 0px 4px;
+            margin-left: 4%;
+        }
+        .fix{
+            position: fixed;/*fixed matlab pure web page mai fixed raehga*/
+            top: 90%;
+            left: 80vw;
+            right: 10vw;
+            border: 2px solid;
+            border-radius: 120px;
+            padding: 8px;
+        }
+        .he{
+            position: sticky;/*sticky matlab apne parent container tak stivky rahega*/
+            top: 0px;
+        }
+        .first{
+            position: relative;/*relative position mai gap maintain rehta h aur isme top left right bottom sab laga sakte h*/
+            top: 20px;
+        }
+        .third{
+            position: absolute;/*absolute position mai gap maintain nahi hota aur left right bottom top laga sakte h*/
+            top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span>
+            <ul class="he">
+                <li class="first">Home</li>
+                <li class="third">About</li>
+                <li>content</li>
+                
+                
+            </ul>
+        </span>
+    </div>
+    <div class="fix">contact us</div>
+    <div class="box">scroll down to know more</div>
+    
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!-- transition is a one step method i.e it achieves destination from source in one single step -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 400px;
+            width: 400px;
+            background-color: aqua;
+            border: 2px solid green;
+            border-radius: 8px;
+            /* transition-property: width,background-color,height;/ */
+            /* hum properties ko comma ka use karke bhi aplly kar sakte h transition mai aur transitionb propert =all karke ek sath swari values pe bhi ap[ply kar sakte h]*/
+            /* transition-property: all;
+            transition-duration: 2s;
+            transition-timing-function: ease-in;
+            transition-delay: 1s; */
+            transition: all 2s linear 0s;
+            /* ye upar wala shorthand notation h transition lagane ke liye jisme pehla h property aur dusra duration aur choutha timing function */
+        }
+        .box:hover{
+            width: 1200px;
+            background-color: blue;
+            height: 800px;
+            border-radius: 1000px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    
+</body>
+</html>

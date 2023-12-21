@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid blue;
+            background-color: aqua;
+            display: flex;
+            flex-direction: row;
+            margin: 2px;
+            /* padding: 2px; */
+            /* justify-content: space-between; */
+            /* height: 50vh;
+            width: 50vw; */
+        }
+        .box{
+            border: 2px solid red;
+            background-color: rgb(138, 239, 37);
+            display: flex;
+            flex-direction: column;
+            height: 47%;
+            width: 47%;
+            padding: 3px;
+            
+        }
+        p{
+            border: 2px solid rgb(93, 29, 211);
+            background-color: red;
+        }
+        img{
+            height: 47%;
+            width: 47%;
+        }
+        @media (max-width:500px){
+            .container{
+                flex-direction: column;
+                background-color: blue;
+                border-radius: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, repellendus!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, magnam.</p>
+        </div>
+        <img src="pex.jpg.jpg" alt="">
+    </div>
+    
+</body>
+</html>

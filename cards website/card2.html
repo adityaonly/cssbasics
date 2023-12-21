@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            /* min-height:1000px; */
+            background-color: #8BC6EC;
+            background-image: linear-gradient(135deg,#8BC6EC 0%,#9599E2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            height: 600px;
+            width: 400px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            background-color: whitesmoke;
+            box-shadow: 0px 0px 50px black;
+        }
+        .box img{
+            border-radius:20px 20px 0px 0px ;
+            height: 30%;
+            width: 100%;
+        }
+        .box h2{
+            text-align: center;
+            font-size: 1.8rem;
+        }
+        .box p{
+            text-align: center;
+            font-size: 1.2em;
+            margin: 10px;
+        }
+        .item{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #8da6ff;
+            height: 10%;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0px 0px 50px rgb(126, 126, 255);
+            padding: 20px;
+        }
+        .left{
+            display: flex;
+            /* width: fit-content; */
+            gap: 15px;
+            height: 100%;
+            align-items: center;
+        }
+        .right{
+            
+        }
+        button{
+            background-color: rgb(22, 22, 79);
+            border: 2px solid blue;
+            border-radius:8px;
+            color: white;
+            height: 7%;
+            width: 80%;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.9),0 6px 6px rgba(0, 0, 0, .23);
+        }
+        .last{
+            text-decoration: none;
+            text-align: center;
+            color: black;
+        }
+        .left img{
+            height: 95%;
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="Screenshot_2023-12-15-10-24-36-90.jpg" alt="">
+            <h2>Order Summary</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo odit libero unde tempore eligendi tenetur expedita eveniet, quaerat corrupti perferendis!</p>
+            <div class="item">
+                    <div class="left">
+                        <img class="music" src="1702701919398.jpg" alt="">
+                        <div class="amountbox" >
+                            <span>Annual Plan</span>
+                            <spa>$100/year</span>
+                        </div>
+                    </div>
+                    <div class="right">
+                          <a href="#.com">Change</a>
+                    </div>
+            </div>
+            <button>Proceed To Payment</button>
+            <a class="last" href="#.com">Cancel Order</a>
+        </div>
+    </div>
+    
+</body>
+</html>
